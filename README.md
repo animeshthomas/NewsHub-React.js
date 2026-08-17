@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 📰 NewsHub — Real-Time Global Headlines & Breaking News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+  <img src="https://img.shields.io/badge/Glassmorphism-Editorial-F43F5E?style=for-the-badge" alt="Glassmorphism" />
+  <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+</p>
 
-## Available Scripts
+> **NewsHub** is an ultra-modern, real-time news portal built with **React 18** and an **Editorial Dark Glassmorphism UI**. Features live category switching, country selection, live search filtering, article bookmarking, reading modals, and fallback news providers for 100% uptime.
 
-In the project directory, you can run:
+🌐 **Live Production Deployment**: [https://newshub-react.vercel.app/](https://newshub-react.vercel.app/) *(Or deploy your own in 1 click!)*
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **🎨 Editorial Dark Glassmorphism UI System**: High-impact news aesthetic with glowing category pills, breaking news ticker banner, and hero story highlight.
+- **🔥 Multi-Category Feeds**: Switch instantly between **Top Headlines**, **Technology**, **Business**, **Entertainment**, **Sports**, **Science**, and **Health**.
+- **🌍 Multi-Country Support**: Select headlines from **India (🇮🇳)**, **United States (🇺🇸)**, **United Kingdom (🇬🇧)**, or **Australia (🇦🇺)**.
+- **🔍 Instant Live Search**: Filter news stories in real-time by keyword, topic, or publisher.
+- **🔖 Bookmark System**: Save articles to `localStorage` to read later in your personal **Saved Stories** tab.
+- **📖 Modal Reader View**: Click any article card to expand full coverage details and visit the original publisher source.
+- **🛡️ 100% Uptime Fallback Data**: Built-in curated fallback datasets ensure zero broken screens or CORS rate-limit failures in client browsers.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Quick Start (Local Setup)
 
-### `npm run build`
+### 1. Clone the Repository
+```bash
+git clone https://github.com/animeshthomas/NewsHub-React.js.git
+cd NewsHub-React.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Start Development Server
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open **`http://localhost:3000`** in your browser!
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ☁️ Deployment Guide
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deploying to Vercel (Recommended)
+1. Import this repository on [Vercel.com](https://vercel.com).
+2. Framework Preset: **Create React App**.
+3. Click **Deploy** — `vercel.json` will automatically configure routing!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📄 License & Credits
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created with ❤️ by **[Animesh Thomas](https://github.com/animeshthomas)**. Distributed under the MIT License.
