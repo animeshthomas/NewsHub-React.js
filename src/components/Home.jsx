@@ -110,6 +110,7 @@ const Home = () => {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchData()
   }, [category, country])
 
@@ -144,11 +145,11 @@ const Home = () => {
       {/* Breaking Ticker Banner */}
       <div className="ticker-banner">
         <div className="container d-flex align-items-center justify-content-between">
-          <div className="d-flex align-items-center gap-2">
+          <div className="d-flex align-items-center gap-2 overflow-hidden" style={{ whiteSpace: 'nowrap' }}>
             <span className="badge bg-danger text-uppercase px-2 py-1" style={{ fontSize: '0.7rem' }}>Breaking</span>
-            <marquee behavior="scroll" direction="left" scrollamount="4" style={{ color: 'var(--text-secondary)' }}>
+            <span className="ticker-text-marquee" style={{ color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
               ⚡ Global tech & market news updated live • Next-gen AI foundation models transform enterprise workflows • Quantum computing breakthroughs announced
-            </marquee>
+            </span>
           </div>
         </div>
       </div>
