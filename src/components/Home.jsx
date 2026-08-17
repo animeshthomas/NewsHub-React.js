@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import axios from 'axios'
 
 const FALLBACK_NEWS = [
@@ -87,7 +87,7 @@ const Home = () => {
   })
   const [selectedArticle, setSelectedArticle] = useState(null)
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true)
     try {
       const apiKey = '9b6ac262eea44bcbbf80ae1b064f631d'
@@ -107,12 +107,11 @@ const Home = () => {
     } finally {
       setLoading(false)
     }
-  }
+  }, [category, country])
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchData()
-  }, [category, country])
+  }, [fetchData])
 
   const toggleBookmark = (article) => {
     const isBookmarked = bookmarks.some(b => b.title === article.title)
