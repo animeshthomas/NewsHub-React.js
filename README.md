@@ -4,13 +4,14 @@
   <img src="https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
   <img src="https://img.shields.io/badge/Glassmorphism-Editorial-F43F5E?style=for-the-badge" alt="Glassmorphism" />
-  <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/GitHub_Pages-Active-22C55E?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
 > **NewsHub** is an ultra-modern, real-time news portal built with **React 18** and an **Editorial Dark Glassmorphism UI**. Features live category switching, country selection, live search filtering, article bookmarking, reading modals, and fallback news providers for 100% uptime.
 
-🌐 **Live Production Deployment**: [https://newshub-react.vercel.app/](https://newshub-react.vercel.app/) *(Or deploy your own in 1 click!)*
+🌐 **Live Deployment (GitHub Pages)**: [https://animeshthomas.github.io/NewsHub-React.js/](https://animeshthomas.github.io/NewsHub-React.js/)
+⚡ **Live Deployment (Vercel)**: [https://newshub-react.vercel.app/](https://newshub-react.vercel.app/)
 
 ---
 
@@ -50,7 +51,13 @@ Open **`http://localhost:3000`** in your browser!
 
 ## ☁️ Deployment Guide
 
-### Deploying to Vercel (Recommended)
+### Deploying to GitHub Pages
+To publish updates to GitHub Pages (`https://animeshthomas.github.io/NewsHub-React.js/`):
+```bash
+npm run deploy
+```
+
+### Deploying to Vercel
 1. Import this repository on [Vercel.com](https://vercel.com).
 2. Framework Preset: **Create React App**.
 3. Click **Deploy** — `vercel.json` will automatically configure routing!
