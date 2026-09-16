@@ -156,7 +156,7 @@ const Home = () => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg newshub-navbar">
         <div className="container">
-          <a className="brand-logo" href="/">
+          <a className="brand-logo" href="#/">
             <i className="ti ti-news text-danger"></i>
             News<span>Hub</span>
           </a>
