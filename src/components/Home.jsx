@@ -90,8 +90,7 @@ const Home = () => {
   const fetchData = useCallback(async () => {
     setLoading(true)
     try {
-      const apiKey = '9b6ac262eea44bcbbf80ae1b064f631d'
-      const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`
+      const url = `https://saurav.tech/NewsAPI/top-headlines/category/${category}/${country}.json`
       const response = await axios.get(url)
       
       if (response.data && response.data.articles && response.data.articles.length > 0) {
@@ -102,7 +101,7 @@ const Home = () => {
         setData(FALLBACK_NEWS)
       }
     } catch (error) {
-      console.warn('NewsAPI fetch error or rate-limited, loading curated feeds:', error)
+      console.warn('Live news fetch error, loading curated feeds:', error)
       setData(FALLBACK_NEWS)
     } finally {
       setLoading(false)
@@ -257,6 +256,10 @@ const Home = () => {
                         src={heroArticle.urlToImage || 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80'}
                         alt={heroArticle.title}
                         className="hero-story-img"
+                        onError={(e) => {
+                          e.target.onerror = null
+                          e.target.src = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80'
+                        }}
                       />
                       <span className="source-badge">{heroArticle.source?.name || 'Top News'}</span>
                     </div>
@@ -369,6 +372,10 @@ const Home = () => {
                     alt={selectedArticle.title}
                     className="img-fluid w-100 mb-4"
                     style={{ borderRadius: '16px', maxHeight: '350px', objectFit: 'cover' }}
+                    onError={(e) => {
+                      e.target.onerror = null
+                      e.target.src = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80'
+                    }}
                   />
                 )}
                 <p className="lead" style={{ color: 'var(--text-primary)' }}>{selectedArticle.description}</p>
