@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.25b52991.css",
-    "main.js": "./static/js/main.a82fccce.js",
-    "static/js/787.d760a48a.chunk.js": "./static/js/787.d760a48a.chunk.js",
-    "index.html": "./index.html",
-    "main.25b52991.css.map": "./static/css/main.25b52991.css.map",
-    "main.a82fccce.js.map": "./static/js/main.a82fccce.js.map",
-    "787.d760a48a.chunk.js.map": "./static/js/787.d760a48a.chunk.js.map"
+    "main.css": "/NewsHub-React.js/static/css/main.25b52991.css",
+    "main.js": "/NewsHub-React.js/static/js/main.386939e4.js",
+    "static/js/787.d760a48a.chunk.js": "/NewsHub-React.js/static/js/787.d760a48a.chunk.js",
+    "index.html": "/NewsHub-React.js/index.html",
+    "main.25b52991.css.map": "/NewsHub-React.js/static/css/main.25b52991.css.map",
+    "main.386939e4.js.map": "/NewsHub-React.js/static/js/main.386939e4.js.map",
+    "787.d760a48a.chunk.js.map": "/NewsHub-React.js/static/js/787.d760a48a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25b52991.css",
-    "static/js/main.a82fccce.js"
+    "static/js/main.386939e4.js"
   ]
 }
