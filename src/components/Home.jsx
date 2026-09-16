@@ -3,64 +3,64 @@ import axios from 'axios'
 
 const FALLBACK_NEWS = [
   {
-    source: { name: 'TechCrunch' },
-    author: 'Sarah Perez',
-    title: 'AI Revolution: Next-Generation Foundation Models Transform Enterprise Workflows',
-    description: 'Generative AI tools and autonomous multi-agent frameworks are rapidly redefining productivity across technology, healthcare, and finance sectors worldwide.',
-    url: 'https://techcrunch.com',
-    urlToImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-    publishedAt: new Date(Date.now() - 1000 * 60 * 45).toISOString(),
-    content: 'Artificial Intelligence continues to accelerate exponentially as enterprise organizations adopt specialized autonomous subagents to streamline coding, research, and data visualization.'
+    source: { name: 'Reuters' },
+    author: 'Reuters News',
+    title: 'Global Semiconductor Supply Chains Expand with New Manufacturing Hubs',
+    description: 'Major technology manufacturers and governments announce international partnerships to diversify microchip production facilities.',
+    url: 'https://www.reuters.com',
+    urlToImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
+    publishedAt: new Date(Date.now() - 1000 * 60 * 60).toISOString(),
+    content: 'International investments in semiconductor fabrication facilities aim to strengthen supply chain resilience and support growing demand.'
   },
   {
-    source: { name: 'Reuters' },
-    author: 'Reuters Markets',
-    title: 'Global Markets Rally as Tech Innovation & Clean Energy Investments Surge',
-    description: 'Stock indices reached record highs today following strong earnings reports from semiconductor leaders and renewable energy infrastructure breakthroughs.',
-    url: 'https://reuters.com',
-    urlToImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
+    source: { name: 'Associated Press' },
+    author: 'AP Markets',
+    title: 'Renewable Energy Investments Reach New Benchmark Across Global Markets',
+    description: 'Utility-scale solar and wind projects continue to expand rapidly as international power grids transition to clean energy sources.',
+    url: 'https://apnews.com',
+    urlToImage: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80',
     publishedAt: new Date(Date.now() - 1000 * 60 * 120).toISOString(),
-    content: 'Global financial markets experienced robust growth today driven by strong tech Sector investments and clean energy initiatives.'
+    content: 'Capital investments in renewable energy infrastructure outpaced expectations this quarter, driven by technological efficiencies.'
   },
   {
     source: { name: 'BBC News' },
-    author: 'Science Desk',
-    title: 'James Webb Space Telescope Discovers Atmospheric Water on Exoplanet',
-    description: 'Astronomers using NASA\'s Deep Space observatory have detected vapor and clouds on a planet located 120 light-years from Earth in a habitable zone.',
-    url: 'https://bbc.com',
+    author: 'Science & Environment',
+    title: 'International Space Agencies Collaborate on Lunar Exploration Missions',
+    description: 'Joint scientific teams prepare robotic probes and orbiters to analyze lunar south pole water ice deposits and terrain.',
+    url: 'https://www.bbc.com',
     urlToImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
     publishedAt: new Date(Date.now() - 1000 * 60 * 180).toISOString(),
-    content: 'Astronomers have confirmed atmospheric signatures including water vapor on remote exoplanets using high-precision spectrometry.'
-  },
-  {
-    source: { name: 'Wired' },
-    author: 'Quantum Insights',
-    title: 'Quantum Computing Reaches Milestones in Molecular Simulation & Cryptography',
-    description: 'Researchers demonstrate room-temperature superconducting qubits capable of breaking complex molecular simulations in seconds.',
-    url: 'https://wired.com',
-    urlToImage: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
-    publishedAt: new Date(Date.now() - 1000 * 60 * 240).toISOString(),
-    content: 'Quantum processor architectures have scaled beyond 1,000 logical qubits, opening new horizons in drug discovery and cryptographic research.'
-  },
-  {
-    source: { name: 'The Verge' },
-    author: 'Dieter Bohn',
-    title: 'Next-Gen Mobile Hardware & Spatial Computing Headsets Reshape Consumer Tech',
-    description: 'Spatial audio, micro-OLED displays, and ultra-fast custom silicon are transforming how we interact with personal computing devices.',
-    url: 'https://theverge.com',
-    urlToImage: 'https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&q=80',
-    publishedAt: new Date(Date.now() - 1000 * 60 * 300).toISOString(),
-    content: 'Spatial computing display technology has matured dramatically with lightweight form factors and high refresh rates.'
+    content: 'Space agencies have finalized mission architectures for upcoming scientific payloads designed to study lunar geology and resources.'
   },
   {
     source: { name: 'Bloomberg' },
-    author: 'Energy Report',
-    title: 'Next-Gen Solid State Batteries Promise 1,000km Range for Electric Vehicles',
-    description: 'Commercial manufacturing of solid-state lithium cells begins as automakers prepare to roll out ultra-fast charging EV fleets.',
-    url: 'https://bloomberg.com',
-    urlToImage: 'https://images.unsplash.com/photo-1558441719-443b38605AD4?auto=format&fit=crop&w=800&q=80',
+    author: 'Global Economy Desk',
+    title: 'Global Trade Agreements Focus on Sustainable Logistics and Digital Commerce',
+    description: 'Commercial corridors and ports integrate automated tracking and streamlined customs protocols to lower cross-border transit times.',
+    url: 'https://www.bloomberg.com',
+    urlToImage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+    publishedAt: new Date(Date.now() - 1000 * 60 * 240).toISOString(),
+    content: 'Modernized customs and port infrastructure are enhancing efficiency for maritime shipping routes and supply networks.'
+  },
+  {
+    source: { name: 'Financial Times' },
+    author: 'Industry Report',
+    title: 'Electric Mobility and Battery Innovations Drive Automotive Sector Growth',
+    description: 'Automakers introduce next-generation charging architectures and higher energy-density platforms for commercial and consumer vehicles.',
+    url: 'https://www.ft.com',
+    urlToImage: 'https://images.unsplash.com/photo-1558441719-443b38605ad4?auto=format&fit=crop&w=800&q=80',
+    publishedAt: new Date(Date.now() - 1000 * 60 * 300).toISOString(),
+    content: 'High-voltage charging architectures and advancements in battery chemistries are supporting widespread commercial fleet adoption.'
+  },
+  {
+    source: { name: 'TechCrunch' },
+    author: 'Enterprise Tech',
+    title: 'High-Speed Fiber and Satellite Networks Expand Global Broadband Access',
+    description: 'Telecommunications operators deploy expanded low-Earth orbit satellite constellations alongside terrestrial fiber infrastructure.',
+    url: 'https://techcrunch.com',
+    urlToImage: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80',
     publishedAt: new Date(Date.now() - 1000 * 60 * 360).toISOString(),
-    content: 'Battery technology advancements enable 10-minute rapid charging and significantly higher energy density.'
+    content: 'Hybrid satellite and fiber broadband rollouts bring low-latency connectivity to previously underserved regional hubs.'
   }
 ]
 
@@ -146,7 +146,9 @@ const Home = () => {
           <div className="d-flex align-items-center gap-2 overflow-hidden" style={{ whiteSpace: 'nowrap' }}>
             <span className="badge bg-danger text-uppercase px-2 py-1" style={{ fontSize: '0.7rem' }}>Breaking</span>
             <span className="ticker-text-marquee" style={{ color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
-              ⚡ Global tech & market news updated live • Next-gen AI foundation models transform enterprise workflows • Quantum computing breakthroughs announced
+              {data && data.length > 0
+                ? data.slice(0, 6).map(item => item.title).filter(Boolean).join('   •   ')
+                : 'Top headlines and breaking news updates'}
             </span>
           </div>
         </div>

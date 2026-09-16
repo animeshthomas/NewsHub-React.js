@@ -1,69 +1,85 @@
-# 📰 NewsHub — Real-Time Global Headlines & Breaking News
+# NewsHub
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
-  <img src="https://img.shields.io/badge/Glassmorphism-Editorial-F43F5E?style=for-the-badge" alt="Glassmorphism" />
-  <img src="https://img.shields.io/badge/GitHub_Pages-Active-22C55E?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
-</p>
+A modern, responsive news aggregation web application built with React. NewsHub delivers real-time global news headlines organized by category and country, featuring client-side search, article bookmarking, and reader modal views.
 
-> **NewsHub** is an ultra-modern, real-time news portal built with **React 18** and an **Editorial Dark Glassmorphism UI**. Features live category switching, country selection, live search filtering, article bookmarking, reading modals, and fallback news providers for 100% uptime.
+## Features
 
-🌐 **Live Deployment (GitHub Pages)**: [https://animeshthomas.github.io/NewsHub-React.js/](https://animeshthomas.github.io/NewsHub-React.js/)
-⚡ **Live Deployment (Vercel)**: [https://newshub-react.vercel.app/](https://newshub-react.vercel.app/)
+- **Category Filtering**: Browse headlines across multiple categories including General, Technology, Business, Entertainment, Sports, Science, and Health.
+- **Regional Coverage**: Filter news from various regions, including India, the United States, the United Kingdom, and Australia.
+- **Real-Time Search**: Instant client-side filtering by keyword, topic, or publisher name.
+- **Saved Articles**: Bookmark articles for later reading with persistence via browser `localStorage`.
+- **Reader Modal**: View expanded article summaries and metadata with direct links to original publisher coverage.
+- **Resilient Data Layer**: Gracefully handles network and API rate limits with fallback dataset integration.
 
----
+## Tech Stack
 
-## ✨ Key Features
+- **Frontend**: React 18
+- **Routing**: React Router v6 (`HashRouter`)
+- **HTTP Client**: Axios
+- **Styling**: Bootstrap 5, Custom CSS
+- **Icons**: Tabler Icons
 
-- **🎨 Editorial Dark Glassmorphism UI System**: High-impact news aesthetic with glowing category pills, breaking news ticker banner, and hero story highlight.
-- **🔥 Multi-Category Feeds**: Switch instantly between **Top Headlines**, **Technology**, **Business**, **Entertainment**, **Sports**, **Science**, and **Health**.
-- **🌍 Multi-Country Support**: Select headlines from **India (🇮🇳)**, **United States (🇺🇸)**, **United Kingdom (🇬🇧)**, or **Australia (🇦🇺)**.
-- **🔍 Instant Live Search**: Filter news stories in real-time by keyword, topic, or publisher.
-- **🔖 Bookmark System**: Save articles to `localStorage` to read later in your personal **Saved Stories** tab.
-- **📖 Modal Reader View**: Click any article card to expand full coverage details and visit the original publisher source.
-- **🛡️ 100% Uptime Fallback Data**: Built-in curated fallback datasets ensure zero broken screens or CORS rate-limit failures in client browsers.
+## Project Structure
 
----
-
-## 🚀 Quick Start (Local Setup)
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/animeshthomas/NewsHub-React.js.git
-cd NewsHub-React.js
+```text
+NewsHub-React.js/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   └── Home.jsx          # Main news dashboard and views
+│   ├── App.css               # Application layout and styling
+│   ├── App.js                # Root component and router configuration
+│   ├── index.css             # Base stylesheet
+│   └── index.js              # Application entry point
+├── package.json
+└── README.md
 ```
 
-### 2. Install Dependencies
-```bash
-npm install
-```
+## Getting Started
 
-### 3. Start Development Server
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+- Node.js (v16 or higher recommended)
+- npm (v8 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/animeshthomas/NewsHub-React.js.git
+   cd NewsHub-React.js
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+To start the development server:
+
 ```bash
 npm start
 ```
 
-Open **`http://localhost:3000`** in your browser!
+The application will run locally at `http://localhost:3000`.
 
----
+### Production Build
 
-## ☁️ Deployment Guide
+To build the project for production:
 
-### Deploying to GitHub Pages
-To publish updates to GitHub Pages (`https://animeshthomas.github.io/NewsHub-React.js/`):
 ```bash
-npm run deploy
+npm run build
 ```
 
-### Deploying to Vercel
-1. Import this repository on [Vercel.com](https://vercel.com).
-2. Framework Preset: **Create React App**.
-3. Click **Deploy** — `vercel.json` will automatically configure routing!
+The compiled output will be generated inside the `build/` directory.
 
----
+## License
 
-## 📄 License & Credits
-
-Created with ❤️ by **[Animesh Thomas](https://github.com/animeshthomas)**. Distributed under the MIT License.
+This project is licensed under the MIT License.
